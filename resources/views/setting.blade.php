@@ -28,8 +28,8 @@
 
                   <div id="menu1" class="tab-pane active fade in " >
                     <ul class="nav  nav-tabs nav-justified  box box-solid ">
-                       <li class="active"><a data-toggle="pill" href="#manageBrand">Manage Brand</a></li>
-                       <li><a data-toggle="pill" href="#addBrand">Add New Brand</a></li>
+                       Manage Product Types</a></li>
+                       <li><a data-toggle="pill" href="#addBrand">Add Type of cattle</a></li>
                     </ul>
                     <!-- brand code starts here -->
                     <div class="col-md-9  col-md-offset-2">
@@ -40,7 +40,7 @@
                                 <table class="table table-bordered table-hover">
                                    <tbody>
                                       <tr>
-                                         <td><span  >Brand Name</span></td>
+                                         <td><span  >cattle Type</span></td>
                                          <td><input type="text" name="name" value="" class="span6 " required /></td>
                                       </tr>
 
@@ -136,7 +136,7 @@
 
                    <div id="menu2" class="tab-pane fade in " >
                        <ul class="nav  nav-tabs nav-justified  box box-solid ">
-                           <li class="active"><a data-toggle="pill" href="#manageStyle">Manage Style</a></li>
+                           <li class="active"><a data-toggle="pill" href="#manageStyle">Manage Cattle Types</a></li>
                        </ul>
                        <div class="col-md-9 col-md-offset-2">
                            <div class="box box-solid">
@@ -148,7 +148,7 @@
                                            <table class="table table-hover">
                                                <tbody>
                                                <tr>
-                                                   <td><span  >New Style Name</span></td>
+                                                   <td><span  >New Cattle Type</span></td>
                                                    <td><input type="text" id="stylename" value="" class="span6 " required /></td>
                                                </tr>
                                                <tr>
@@ -185,8 +185,9 @@
 
                <div class="tab-content col-md-3 ">
                   <ul class="nav nav-pills nav-stacked box box-solid box-primary">
-                     <li class="active"><a data-toggle="pill" href="#menu1">Brand</a></li>
-                      <li><a data-toggle="pill" href="#menu2">Styles</a></li>
+<img src="employee_images/products.png" alt="cattle" class="img-circle" style="float:left;width:42px;height:42px;"><li class="active"><a data-toggle="pill" href="#menu1">Product Type</a></li>
+<img src="employee_images/imag.png" alt="cattle" class="img-circle" style="float:left;width:42px;height:42px;"><li><a data-toggle="pill" href="#menu2">Cattle Type</a></li>
+
 
                   </ul>
 
@@ -200,8 +201,8 @@
 
     <script>
         function saveStyle() {
-            var style=document.getElementById("stylename").value;
-            if(style=="") alert("Enter style name First");
+            var style=document.getElementById("cattletype").value;
+            if(style=="") alert("Enter cattletype First");
             else {
                 $.ajax({
                     data: {data: style},

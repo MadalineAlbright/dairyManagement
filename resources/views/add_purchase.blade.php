@@ -270,6 +270,9 @@
         <div class="col-md-5">
             <div class="box box-default box-solid">
                 <div class="box-header with-border">
+                  <div class="pull-left image">
+                     <img src="employee_images/products.png" class="img-circle" width="200" height="150" alt="products Image">
+                 </div>
 
                     <h3 class="box-title">Add new products to stock</h3>
                     <a href="#addSupplyer" role="button" class="btn btn-warning btn-sm  pull-right" title="Add new supplyer" data-toggle="modal"><i class="fa fa-user-plus" ></i></a>
@@ -278,7 +281,7 @@
 
                     <!-- /.box-tools -->
                 </div>
-                <span class="callout text-danger"> Follow the steps to add new products.</span>
+                <span class="callout text-danger"> Follow the steps to add new dairy products.</span>
 
                 <!-- /.box-header -->
                 <div class="box-body">
@@ -316,7 +319,7 @@
 
                                         </tr>
                                         <tr>
-                                            <td><label class="control-label">Supplyer:</label></td>
+                                            <td><label class="control-label">Supplier:</label></td>
                                             <td> <select class="form-control select2" id="supplyerId" onchange="supplyercheck(this)" style="width: 100%;">
                                                 <option>Select...</option>
 
@@ -340,7 +343,7 @@
                                 <div class="col-md-7">
                                     <table class="table table-hover">
                                         <tr>
-                                            <td><label class="control-label">Brand:</label></td>
+                                            <td><label class="control-label">Product Type:</label></td>
                                             <td> <select class="form-control select2" onchange="getBrand(this)" style="width: 100%;" ;>
                                                 <option>Select...</option>
                                                 <?php
@@ -359,8 +362,8 @@
                                         </tr>
 
                                         <tr>
-                                            <td><label class="control-label">Style</label></td>
-                                            <td> <select class="form-control select2" id="styleID" onchange="getStyle(this)" style="width: 100%;" ;>
+                                            <td><label class="control-label">Cattle Type</label></td>
+                                            <td> <select class="form-control select2" id="styleID" onchange="getStyle(this)" required="required"style="width: 100%;" ;>
                                                 <option value="-1">Select...</option>
                                                 <?php
                                                 foreach($all_published_style as $Pvalue)
@@ -372,19 +375,19 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><label class="control-label">Size:</label></td>
+                                            <td><label class="control-label">Measurement(litres,kg etc):</label></td>
                                             <td> <input id="size" type="text" required="required" class="form-control" maxlength="50px" placeholder="Enter size" /></td>
                                         </tr>
                                         <tr>
-                                            <td><label class="control-label">Color:</label></td>
-                                            <td> <input id="color" type="text" required="required" class="form-control" maxlength="50px" placeholder="Enter color" /></td>
+                                            <td><label class="control-label">Description:</label></td>
+                                            <td> <input id="color" type="text" required="required" class="form-control" maxlength="70px" placeholder="Enter color" /></td>
                                         </tr>
                                         <tr>
                                             <td><label class="control-label">Qty:</label></td>
-                                            <td> <input id="qty" type="number" required="required" class="form-control" maxlength="50px" placeholder="Enter quantity" /></td>
+                                            <td> <input id="qty" type="number" required="required" class="form-control" maxlength="50px" placeholder="Enter quantity(litres,kg etc)" /></td>
                                         </tr>
                                         <tr>
-                                            <td><label class="control-label">Per price:</label></td>
+                                            <td><label class="control-label">Price:</label></td>
                                             <td> <input id="price" type="number" required="required" class="form-control" maxlength="50px" placeholder="Enter price" /></td>
                                         </tr>
 
@@ -422,14 +425,14 @@
                               <br>
 
 
-                            <label class="text-danger" style="font-size:13px;">Supplyer: </label>
+                            <label class="text-danger" style="font-size:13px;">Supplier: </label>
                             <label id="display_supplyer" class="label" style="font-size:13px; color:black; "> Not selected </label>
                             <br>
-                              <label class="text-danger" style="font-size:13px;">Brand: </label>
+                              <label class="text-danger" style="font-size:13px;">Product Type: </label>
                             <label id="display_brand" class="label" style="font-size:13px; color:black; "> Not selected </label>
                            <br>
 
-                            <label class="text-danger" style="font-size:13px;">Style: </label>
+                            <label class="text-danger" style="font-size:13px;">Cattle Type: </label>
                             <label id="display_style" class="label" style="font-size:13px; color:black;border: black 1px solid;border-radius: 10/8px; "> None </label>
 
 
@@ -443,12 +446,11 @@
                         <thead>
                             <tr>
 
-                                <th><i class="fa fa-sort"></i> Product </th>
-                                <th><i class="fa fa-sort"></i> Size </th>
-                                <th><i class="fa fa-sort"></i> Qty.</th>
-                                <th><i class="fa fa-sort"></i> Price</th>
-                                <th><i class="fa fa-sort"></i> Total price</th>
-                                <th><i class="fa fa-sort"></i> Action</th>
+                              <th><i class="fa fa-sort"></i> Product </th>
+                              <th><i class="fa fa-sort"></i> Measurement </th>
+                              <th><i class="fa fa-sort"></i> Qty.</th>
+                              <th><i class="fa fa-sort"></i> Price</th>
+                              <th><i class="fa fa-sort"></i> Action</th>
                             </tr>
                         </thead>
                         <tbody>

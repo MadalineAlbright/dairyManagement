@@ -231,12 +231,8 @@
                     @slot('head')
                     <th><i class="fa fa-sort"></i> Product(Qty.)</th>
                     <th><i class="fa fa-sort"></i> Available </th>
-                    <th><i class="fa fa-sort"></i> Style </th>
-                    <th><i class="fa fa-sort"></i> Brand </th>
-
+                    <th><i class="fa fa-sort"></i> Product Type </th>
                     <th><i class="fa fa-sort"></i> Price </th>
-                    <th><i class="fa fa-sort"></i> Size </th>
-                    <th><i class="fa fa-sort"></i> Color</th>
                     <th><i class=""></i> Action</th>
                     @endslot
                     @endcomponent
@@ -303,6 +299,16 @@
                                     </tr>
                                     <tr>
                                         <td></td>
+                                        <td><label class="control-label">Product Type:</label></td>
+
+
+                                        <td><input type="number" id="priceIN" /></td>
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
                                         <td><label class="control-label">Price:</label></td>
 
 
@@ -310,32 +316,11 @@
 
 
                                     </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>Size</td>
-
-                                        <td><input type="Text" id="sizeIN" /></td>
-
-
-                                    </tr>
-
-
-                                    <tr>
-                                        <td></td>
-                                        <td>Color</td>
-                                        <td><input type="Text" id="colorIN" /></td>
 
 
 
-                                    </tr>
 
-                                    <tr>
-                                        <td></td>
-                                        <td>Style</td>
-                                        <td>
-                                            <select class="form-control select2" id="styleID" style="width: 80%;" ;>
 
-                                </select>
 
                                         </td>
 

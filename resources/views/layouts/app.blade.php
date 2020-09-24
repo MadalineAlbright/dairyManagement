@@ -242,7 +242,7 @@
 
                                     <p>
                                         Admin
-                                        <small>github.com/sangit0</small>
+                                        <small>Lizel.Murigi@strathmore.edu</small>
                                     </p>
                                 </li>
                                 <!-- Menu Body -->
@@ -273,7 +273,7 @@
                         <img src="employee_images/photo_default_emplyee1.png" class="img-circle" alt="User Image">
                     </div>
                     <div class="pull-left info">
-                        <p>Albright Madeline</p>
+                        <p>Lizel Murigi</p>
                         <small>Stock keeper</small>
 
                     </div>
@@ -306,7 +306,7 @@
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-tint"></i>
-                            <span> Supplyers</span>
+                            <span> Suppliers</span>
                             <span class="pull-right-container">
                             </span>
                         </a>
@@ -346,13 +346,6 @@
 
 
 
-        <!-- /.content-wrapper -->
-        <footer class="main-footer">
-            <div class="pull-right hidden-xs">
-                <b>Version</b> 1.0 Beta
-            </div>
-            <strong>Copyright &copy; 2018 <a href="https://github.com/sangit0">Sangit</a>.</strong> All rights reserved.
-        </footer>
 
         <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->

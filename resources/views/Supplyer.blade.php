@@ -57,7 +57,7 @@
                 Manage supplier information
             @endslot
             @slot('body')
-                    <button class="btn btn-success" data-toggle="modal" data-target="#addSupplyer"><i class="fa fa-plus-square"></i> Add new supplyer</button>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#addSupplyer"><i class="fa fa-plus-square"></i> Add new supplier</button>
 
                     <table  id="sTBL" class="table table-bordered table-hover">
                         <thead>
@@ -125,7 +125,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Edit supplyer</h4>
+                    <h4 class="modal-title">Edit supplier</h4>
                 </div>
                 <div class="modal-body">
                     <table  class="table">
@@ -162,7 +162,7 @@
 
                             <tr>
                                 <td></td>
-                                <td>Adress</td>
+                                <td>Address</td>
 
 
                                 <td><input type="text" name="adress" id="adress" /></td>
@@ -229,7 +229,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Add new supplyer</h4>
+                    <h4 class="modal-title">Add new supplier</h4>
                 </div>
                 <div class="modal-body">
                     <table  class="table">
